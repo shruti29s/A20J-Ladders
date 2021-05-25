@@ -2,7 +2,7 @@
 
 import java.util.*;
 import java.io.*;
-public class Main{
+class watermelon{
     public static void main(String [] args)throws IOException{
         Scanner sc=new Scanner(System.in);
         int w=sc.nextInt();
