@@ -8,27 +8,27 @@ public class FoxAndSnake {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int m=sc.nextInt();
-        char a[][]=new char[n][m];
+        char arr[][]=new char[n][m];
         int c=0;
         for(int i=0;i<n;i++)
         {
             if(i%2==0){
                 for(int j=0;j<m;j++)
                 {
-                    a[i][j]='#';
+                    arr[i][j]='#';
                 }
             }
             else{
                 for(int j=0;j<m;j++)
                 {
-                    a[i][j]='.';
+                    arr[i][j]='.';
                 }
                 if(c%2==0)
                 {
-                    a[i][m-1]='#';
+                    arr[i][m-1]='#';
                 }
                 else{
-                    a[i][0]='#';
+                    arr[i][0]='#';
                 }
                 c++;
             }
@@ -37,7 +37,7 @@ public class FoxAndSnake {
         {
             for(int j=0;j<m;j++)
             {
-                System.out.print(a[i][j]);
+                System.out.print(arr[i][j]);
             }
             System.out.println();
         }
