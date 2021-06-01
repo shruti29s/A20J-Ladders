@@ -8,16 +8,16 @@ public class SingerAndJoker {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int d=sc.nextInt();
-        int a[]=new int[n];
+        int arr[]=new int[n];
         for(int i=0;i<n;i++)
         {
-            a[i]=sc.nextInt();
+            arr[i]=sc.nextInt();
         }
         int s=(n-1)*10;
         int c=(n-1)*2;
         for(int i=0;i<n;i++)
         {
-            s+=a[i];
+            s+=arr[i];
         }
         if(s>d)
         {
